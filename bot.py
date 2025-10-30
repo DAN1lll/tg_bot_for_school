@@ -1,7 +1,7 @@
 import telebot 
 from telebot import types 
  
-bot = telebot.TeleBot('token')
+bot = telebot.TeleBot('api-token')
 @bot.message_handler(commands=['start']) 
 def start(message): 
     bot.send_photo(message.chat.id, photo='http://photobook33.ru/wp-content/uploads/2015/12/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD-%D0%9C%D0%B8%D1%85%D0%B0%D0%BB%D0%B8-%D0%A1%D1%83%D0%B7%D0%B4%D0%B0%D0%BB%D1%8C-02.jpg' 
@@ -171,3 +171,4 @@ def inlin(c):
  
 if __name__ == "__main__": 
     bot.polling(none_stop=True)
+
